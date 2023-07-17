@@ -20,6 +20,9 @@ defmodule DemoWeb.Router do
     get "/", PageController, :home
     get "/hello_world", PageController, :hello_world
     get "/inspect", PageController, :inspect
+    live "/lightswitch", LightLive
+    live "/clock", ClockLive
+    live "/counter", CounterLive
   end
 
   # Other scopes may use custom stacks.
